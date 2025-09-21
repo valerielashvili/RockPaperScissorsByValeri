@@ -89,16 +89,12 @@ while restart_game != 'no':
                 f"----------------------------"
             )
         score_stats = "\n".join(output_lines)
-        score_board = f"""\n
-Thank you for playing!
-
-Latest Scores:
-
-RANK  NAME      WINS  LOSSES
-============================
-{score_stats}
-Draws: {draw_count}
-"""
+        score_board = f"\nThank you for playing!\n\n"\
+                      f"Latest Scores:\n\n"\
+                      f"RANK  NAME      WINS  LOSSES\n"\
+                      f"============================\n"\
+                      f"{score_stats}\n"\
+                      f"Draws: {draw_count}"
         print(score_board)
         break
     else:
