@@ -1,5 +1,12 @@
 import random
 
+# ANSI color codes
+blue = "\033[0;34m"
+green = "\033[0;32m"
+yellow = "\033[1;33m"
+red = "\033[0;31m"
+reset = "\033[0m"
+
 rock = 'Rock'
 paper = 'Paper'
 scissors = 'Scissors'
@@ -25,16 +32,15 @@ elif computer_random_number == 2:
 else:
     computer_move = scissors
 
-print(f"The computer chose {computer_move}.")
+print(f"{blue}The computer chose {computer_move}.{reset}")
 
 if (player_move == rock and computer_move == scissors) or \
         (player_move == paper and computer_move == rock) or \
         (player_move == scissors and computer_move == scissors):
-    print("You win!")
+    print(f"{green}You win!{reset}")
 elif (player_move == rock and computer_move == rock) or \
         (player_move == paper and computer_move == paper) or \
         (player_move == scissors and computer_move == scissors):
-    print("Draw")
+    print(f"{yellow}Draw{reset}")
 else:
-    print("You lose!")
-
+    print(f"{red}You lose!{reset}")
