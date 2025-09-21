@@ -80,20 +80,17 @@ while restart_game != 'no':
         # Sort players by rank
         score = dict(sorted(score.items(), key=lambda item: item[1]["rank"]))
         output_lines = []
-        score_stats = ""
 
         # Format output
         for player, stats in score.items():
-            space_num = ""
-            if player == 'user':
-                space_num = " " * 6
-            else:
-                space_num = "  "
-            output_lines.append(f"{stats['rank']}     {player}{space_num}{stats['win']}     {stats['loss']}\n"
-                                f"----------------------------")
+            space_num = " " * (6 if player == 'user' else 2)
+            output_lines.append(
+                f"{stats['rank']}     {player}{space_num}{stats['win']}     {stats['loss']}\n"
+                f"----------------------------"
+            )
         score_stats = "\n".join(output_lines)
-
-        score_board = f"""\nThank you for playing!
+        score_board = f"""\n
+Thank you for playing!
 
 Latest Scores:
 
