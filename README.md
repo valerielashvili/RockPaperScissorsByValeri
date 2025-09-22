@@ -15,8 +15,8 @@ This basic implementation of the cherished game is an extra project in the [Data
 lesson which is part of the **Programming Fundamentals with Python** module from [SoftUni](https://softuni.bg/),
 description of the practical exercise can be found [here](https://softuni.bg/downloads/svn/soft-tech/Sept-2025/Python/02-Data-Types-and-Variables/01-Project-Rock-Paper-Scissors/01-Rock-Paper-Scissors-Project-Description..pdf).
 
-The goal of the project is to better learn Python and work with Git & GitHub.
-The aim of the exercise is to resolve the problem with the accumulated until the moment knowledge.
+The goal of the project is to better learn Python and work with Git & GitHub. The approach in the exercise is to resolve the 
+problem with the accumulated until the moment knowledge.
 
 ## Input and Output
 The player enters one of the following options:
