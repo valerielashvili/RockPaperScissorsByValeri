@@ -44,7 +44,7 @@ while restart_game != 'no':
     # Check the winner & assign scores
     if (player_move == rock and computer_move == scissors) or \
             (player_move == paper and computer_move == rock) or \
-            (player_move == scissors and computer_move == scissors):
+            (player_move == scissors and computer_move == paper):
         score['user']['win'] += 1
         score['computer']['loss'] += 1
         print(f"{green}You win!{reset}\n")
