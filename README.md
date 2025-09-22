@@ -50,3 +50,6 @@ Following additional functionality was implemented:
 - **Scoring system** improved to have player **ranks**.
 - The **draws number** is accounted.
 - A **score board** is printed at the end of the game.
+
+## Screenshots
+![Rock, Paper, Scissors](rps_screenshot.png)
